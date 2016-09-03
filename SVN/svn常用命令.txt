@@ -1,0 +1,9 @@
+导出已有项目:
+Svnadmin?dump?c:\Repositories\Test（源文件夹绝对路径） > d:\Dumpfile（导出文件的存放路径及名称：Dumpfile）
+例：Svnadmin dump F:\software\Repositories\SVN_QrCodeScan > d:\test
+
+创建新的版本库，假设名称为TestDump:
+Svnadmin create F:\software\Repositories\TestDump
+
+将导出的文件导入到新的版本库TestDump:
+Svnadmin load /Repositories/TestDump（目标相对路径） < c:/dumpfile（源路径）
